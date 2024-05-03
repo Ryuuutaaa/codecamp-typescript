@@ -30,4 +30,8 @@ function isConsoleErr(errmsg: string): void {
   console.log(errmsg);
 }
 
+function handdleErrpr(errmsg: string): void {
+  console.log(errmsg);
+}
+
 export {};
