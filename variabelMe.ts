@@ -12,4 +12,13 @@ idMahasiswa = 1122121121;
 // boolean
 let isLogin: boolean = true;
 
+// any
+let hero: string;
+
+function getHero() {
+  return "thor";
+}
+
+hero = getHero();
+
 export {};
