@@ -15,10 +15,19 @@ const isLoggin = (
   isPaid: boolean
 ) => {};
 
-
 isLoggin(1, "rafi", "rafi@lv.com", true);
 signUpUser(1, "rafi", "rafi@lv.com", true);
 getUser("rafi");
 addTwo(2);
+
+const heros = ["iroman", "capten", "spidereman"];
+
+heros.map((hero): string => {
+  return `Hero is ${hero}`;
+});
+
+function isConsoleErr(errmsg: string): void {
+  console.log(errmsg);
+}
 
 export {};
