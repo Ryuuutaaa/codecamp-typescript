@@ -26,4 +26,16 @@ const createUser = (user: User): User => {
 
 createUser({ name: "", email: "", isActive: true });
 
+type Point = {
+  y: number;
+  x: number;
+};
+
+const printCood = (pt: Point) => {
+  console.log("print disini", pt.x);
+  console.log("print disini", pt.y);
+};
+
+printCood({ x: 100, y: 200 });
+
 export {};
