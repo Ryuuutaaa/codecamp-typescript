@@ -14,28 +14,58 @@
 //   return { name: "rafi", isPaind: true };
 // };
 
+// type User = {
+//   name: string;
+//   email: string;
+//   isActive: boolean;
+// };
+
+// const createUser = (user: User): User => {
+//   return { name: "", email: "", isActive: true };
+// };
+
+// createUser({ name: "", email: "", isActive: true });
+
+// type Point = {
+//   y: number;
+//   x: number;
+// };
+
+// const printCood = (pt: Point) => {
+//   console.log("print disini", pt.x);
+//   console.log("print disini", pt.y);
+// };
+
+// printCood({ x: 100, y: 200 });
+
 type User = {
+  readonly _id: string;
   name: string;
   email: string;
   isActive: boolean;
+  credCardDeatails?: number;
 };
 
-const createUser = (user: User): User => {
-  return { name: "", email: "", isActive: true };
+let myUser: User = {
+  _id: "23232",
+  name: "rafi",
+  email: "afds@gmail",
+  isActive: true,
 };
 
-createUser({ name: "", email: "", isActive: true });
-
-type Point = {
-  y: number;
-  x: number;
+type cardNumber = {
+  cardnumber: number;
 };
 
-const printCood = (pt: Point) => {
-  console.log("print disini", pt.x);
-  console.log("print disini", pt.y);
+type cardDate = {
+  cardDate: string;
 };
 
-printCood({ x: 100, y: 200 });
+type cardDetails = cardNumber &
+  cardDate & {
+    cvv: number;
+  };
+
+myUser.email = "iiii@gmail";
 
 export {};
