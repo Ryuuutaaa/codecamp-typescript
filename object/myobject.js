@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var user = {
     name: "rafi",
     email: "rafi@gmail",
@@ -8,3 +10,6 @@ var createUser = function (_a) {
 };
 var newUser = { name: "rafi", isPaid: true };
 createUser(newUser);
+var createCoures = function () {
+    return { name: "rafi", isPaind: true };
+};
