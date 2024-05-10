@@ -31,3 +31,5 @@ let seatAllotment: "rafi" | "mahiru" | "itsuki";
 
 seatAllotment = "rafi";
 // seatAllotment = "ultramen"; // this error
+
+export {};
