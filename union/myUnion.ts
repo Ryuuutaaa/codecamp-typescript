@@ -22,4 +22,12 @@ function geDbId(id: number | string) {
   }
 }
 
+// array
+const data: number[] = [1, 2, 3];
+const data2: string[] = ["1", "2", "3"];
+const data3: (number | string | boolean)[] = ["1", "2", 3, true];
 
+let seatAllotment: "rafi" | "mahiru" | "itsuki";
+
+seatAllotment = "rafi";
+seatAllotment = "ultramen"; // this error
