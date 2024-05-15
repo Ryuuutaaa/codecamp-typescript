@@ -15,7 +15,7 @@ interface Admin extends User {
   role: "admin" | "student" | "teacher";
 }
 
-// perbedaan menggunakan interface dan type adalah interface bisa menggunakan extends kepada parentnya sedangkan type tidak bisa menggunakan extend
+// perbedaan menggunakan interface dan type adalah interface bisa menggunakan extends kepada parentnya sedangkan type tidak bisa menggunakan extend yearyy
 
 const hitest: Admin = {
   dbId: 33,
@@ -29,5 +29,5 @@ const hitest: Admin = {
   getCouppon(name: "larisacipiont", off: 10) {
     return 34;
   },
-  githubToke: 34,
+  githubToke: 39,
 };
