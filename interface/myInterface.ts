@@ -24,7 +24,7 @@ const hitest: Admin = {
   role: "admin",
   googleId: 23,
   startTrail: () => {
-    return "haii";
+    return "haii rafi";
   },
   getCouppon(name: "larisacipiont", off: 10) {
     return 34;
