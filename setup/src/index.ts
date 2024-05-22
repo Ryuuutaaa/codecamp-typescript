@@ -17,5 +17,5 @@ class User {
   {}
 }
 
-const rafi = new User("ryu@tgmail.com", "ruy");
+const rafi = new User("ryu@tgmail.com", "ryutaa");
 // rafi.city;
