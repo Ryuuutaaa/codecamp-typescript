@@ -10,12 +10,32 @@
 // }
 
 class User {
+  private __course = 1;
+
+  private deleteToken() {
+    console.log("Token delete");
+  }
+
   constructor(
     public email: string,
-    public name: string
-  ) // private userId: string
-  {}
+    public name: string // private userId: string
+  ) {}
+
+  get getAppleEmail(): string {
+    return `apple${this.email}`;
+  }
+
+  get courseCount(): number {
+    return this.__course;
+  }
+
+  set courseCount(courseNum) {
+    if (courseNum <= 1) {
+      throw new Error("Course cound should be more than 1");
+    }
+    this.__course = courseNum;
+  }
 }
 
-const rafi = new User("ryu@tgmail.com", "ryutaa");
-// rafi.city;
+const hitest = new User("hh@gmail.com", "hitest");
+hitest.deleteToken();
