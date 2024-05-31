@@ -10,7 +10,7 @@
 // }
 
 class User {
-  private __course = 1;
+  protected __courseCount = 1;
 
   private deleteToken() {
     console.log("Token delete");
@@ -26,16 +26,23 @@ class User {
   }
 
   get courseCount(): number {
-    return this.__course;
+    return this.__courseCount;
   }
 
   set courseCount(courseNum) {
     if (courseNum <= 1) {
       throw new Error("Course cound should be more than 1");
     }
-    this.__course = courseNum;
+    this.__courseCount = courseNum;
+  }
+}
+
+class SubUser extends User {
+  isFamily: boolean = true;
+  changeCoureCount() {
+    this.__courseCount = 4;
   }
 }
 
 const hitest = new User("hh@gmail.com", "hitest");
-hitest.deleteToken();
+// hitest.deleteToken();
